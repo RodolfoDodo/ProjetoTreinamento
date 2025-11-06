@@ -13,7 +13,8 @@ Funcionalidade: Acessar o sistema
       | nome    | sobrenome |
       | Rodolfo | Farley    |
       | Luna    | Veloso    |
-      | Pedro   | oi      |
+      | Pedro   | Lima      |
+      |         | Teste     |
 
 
 

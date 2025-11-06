@@ -49,6 +49,12 @@
         </dependency>
         <dependency>
             <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite-engine</artifactId>
+            <version>1.10.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-engine</artifactId>
             <version>1.10.2</version>
             <scope>test</scope>
@@ -113,7 +119,11 @@
                         <cucumber.features>classpath:features</cucumber.features>
                         <cucumber.glue>steps</cucumber.glue>
                         <cucumber.execution.strict>true</cucumber.execution.strict>
+                        <cucumber.publish.quiet>true</cucumber.publish.quiet>
                     </systemPropertyVariables>
+                    <includes>
+                        <include>**/RunTests.java</include>
+                    </includes>
                 </configuration>
             </plugin>
 
