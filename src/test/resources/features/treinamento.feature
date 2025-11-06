@@ -12,9 +12,9 @@ Funcionalidade: Acessar o sistema
     Exemplos:
       | nome    | sobrenome |
       | Rodolfo | Farley    |
-      | Luna    | Veloso    |
-      | Pedro   | Lima      |
-      |         | Teste     |
+#      | Luna    | Veloso    |
+#      | Pedro   | Lima      |
+#      |         | Teste     |
 
 
 

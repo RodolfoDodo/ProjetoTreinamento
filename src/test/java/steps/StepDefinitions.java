@@ -70,10 +70,10 @@ public class StepDefinitions {
     @Dado("informo um sobre {string}")
     public void informo_um_sobre(String sobrenome) {
         driver.findElement(By.id("sobrenome")).sendKeys(sobrenome);
-        String valorCampo = driver.findElement(By.id("sobrenome")).getAttribute("value");
+        String valorCampo = driver.findElement(By.id("sobrensssome")).getAttribute("value");
         assertEquals(sobrenome, valorCampo, "O sobrenome inserido não está correto");
 
-        tirarScreenshot("sobre");
+        tirarScreenshot("sobrenome");
     }
 
 
