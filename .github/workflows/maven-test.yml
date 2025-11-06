@@ -23,8 +23,18 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
+    - name: Install Chrome dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y chromium-browser chromium-chromedriver
+
+    - name: Create screenshots directory
+      run: mkdir -p screenshots
+
     - name: Run tests with Maven
       run: mvn -B test --file pom.xml
+      env:
+        CI: true
 
     - name: Upload test results
       if: always()
